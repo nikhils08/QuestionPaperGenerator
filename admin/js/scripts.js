@@ -199,11 +199,11 @@ $(document).ready(function () {
         loadChapters('#chapter_subject', '#chapter_name');
     });
     
-    $('#btncancel').on('click', function(event){
+    /*$('#btncancel').on('click', function(event){
         setTimeout(function() {
             location.reload();
         }, 500);
-    });
+    });*/
     
     $('.edit_btn').on('click', function(event){
         $('#modaltitle').html("Edit Question");

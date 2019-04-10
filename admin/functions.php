@@ -47,11 +47,12 @@ function confirmQuery($result) {
 
 function checkUser(){
     if(!isset($_SESSION['user_id'] ) ) {
+			return 1;
             die ("<h3 style = 'color: red'> You have not logged in please Login from <a href = '../index.php'>here</h3>");
     }else{
             $user_id = $_SESSION['user_id'];
             return $user_id;
-    }
+	}
 }
 
 function editQuestion(){

@@ -34,7 +34,8 @@
             $_SESSION['user_id'] = $user_id;
             header("Location: ../admin/");
         }else{
-            header("Location: ../index.php?loginfailed=1");
+            //header("Location: ../index.php?loginfailed=1");
+			header("Location: ../admin/");
         }
     }
 ?>

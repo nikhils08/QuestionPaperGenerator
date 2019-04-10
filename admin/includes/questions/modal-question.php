@@ -57,7 +57,7 @@
             <!--END OF MODAL BODY -->
             <!--MODAL FOOTER-->
             <div class="modal-footer">
-                <button class="btn btn-warning" id = "btncancel" data-target = "#addquestion" data-toggle = "modal"><span class="fa fa-times"></span> Cancel</button> 
+                <button class="btn btn-warning" id = "btncancel" type="reset" data-target = "#addquestion" data-toggle = "modal"><span class="fa fa-times"></span> Cancel</button>
                 <button type="submit" class="btn btn-success" name="btntoadd" id = "btntoperform"><span class="fa fa-check"></span> Add Question</button>
             </div>
             <!--END OF MODAL-FOOTER -->
