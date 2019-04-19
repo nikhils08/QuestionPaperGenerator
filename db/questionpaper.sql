@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2019 at 03:36 PM
+-- Generation Time: Apr 19, 2019 at 02:44 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -48,7 +48,11 @@ INSERT INTO `chapter` (`chapter_id`, `chapter_subject_id`, `chapter_name`) VALUE
 (11, 1, 'Programs'),
 (12, 2, 'Collection Framework'),
 (13, 2, 'Window Events'),
-(15, 2, 'Event Handling');
+(15, 2, 'Event Handling'),
+(16, 4, 'Introduction to Java'),
+(17, 4, 'Objects and Classes'),
+(18, 4, 'Java Concepts'),
+(19, 5, 'Introduction to ML');
 
 -- --------------------------------------------------------
 
@@ -68,22 +72,42 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`question_id`, `question`, `question_chapter_id`, `question_marks`) VALUES
-(1, 'What is condition for stack overflow and underflow', 1, 2),
-(10, 'What is Ajax Call', 2, 2),
-(11, 'Checking SQL Power 1', 1, 2),
-(12, 'Checking SQL Power 2', 1, 1),
-(13, 'What is Graph', 7, 2),
-(14, 'What is Framework', 12, 2),
-(15, 'Quesiton 1 Of Testing query', 5, 2),
-(16, 'Quesiton 2 Of Testing query', 4, 5),
-(17, 'Quesiton 3 Of Testing query', 10, 5),
-(18, 'Quesiton 4 Of Testing query', 11, 10),
-(19, 'Second Program', 11, 10),
-(20, 'Stack is which type of data Structure? Linear Or Non-Linear.', 1, 1),
-(21, 'Check Select', 1, 2),
-(22, 'Hello', 12, 2),
-(24, 'Slow Speed', 8, 1),
-(25, 'What is Classes', 13, 10);
+(1, 'HTML stands for', 2, 1),
+(2, 'hr stands for..', 3, 1),
+(3, 'br stands for..', 3, 1),
+(4, 'What is JVM?', 16, 5),
+(5, 'List any 5 Features of Java', 16, 10),
+(6, 'Why is Java Architectural neutral?', 16, 5),
+(7, 'How Java enabled High Performance?', 16, 5),
+(8, 'h1 to h6 tags are used for what purpose?', 3, 1),
+(9, 'Why java is considered Dynamic?', 16, 5),
+(10, 'Which tag is used for defining bold text?', 3, 1),
+(11, 'List 10 java keywords', 17, 10),
+(12, 'What do you mean by Object?', 17, 5),
+(13, 'What do you mean by class?', 17, 5),
+(14, 'What does <small> tag does?', 3, 2),
+(15, 'What is Local and Instance variable?', 17, 10),
+(16, 'Which tag defines important text?', 3, 2),
+(17, 'Which tag defines subscripted text?', 3, 2),
+(18, 'Which tag is used to define html form?', 3, 1),
+(19, 'What is Function Overloading?', 18, 5),
+(20, 'What is Polymorphism?', 18, 5),
+(21, 'Which tag is used to define caption for fieldset element?', 3, 2),
+(22, 'What is Inheritance?', 18, 5),
+(23, 'Difference between Throw and Throws', 18, 5),
+(24, 'What does fieldset tag does?', 3, 2),
+(25, 'Which tag is used to define image?', 3, 1),
+(26, 'Which tag defines sound content?', 3, 2),
+(27, 'What does ul tag defines?', 3, 1),
+(28, 'What is Machine Learning?', 19, 5),
+(29, 'What are the different Algorithm techniques in ML?', 19, 5),
+(30, 'List and Exlplain five popular Algorithms of Machine Learning', 19, 10),
+(31, 'What is Overfitting in ML?', 19, 5),
+(32, 'List down various approaches for machine learning', 19, 5),
+(33, 'What is Algorithm independent Machine Learning?', 19, 5),
+(34, 'List Applications of machine learning', 19, 10),
+(35, 'What is Supervised and Unsupervised machine learning?', 19, 10),
+(36, 'Differnce between Supervised and Unsupervised machine learning', 19, 5);
 
 -- --------------------------------------------------------
 
@@ -103,7 +127,9 @@ CREATE TABLE `subjects` (
 INSERT INTO `subjects` (`subject_id`, `subject_name`) VALUES
 (1, 'Data Structures'),
 (2, 'Advance Java'),
-(3, 'Web Development');
+(3, 'Web Development'),
+(4, 'Java'),
+(5, 'Machine Learning');
 
 -- --------------------------------------------------------
 
@@ -166,17 +192,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `chapter`
 --
 ALTER TABLE `chapter`
-  MODIFY `chapter_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `chapter_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `question_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT for table `subjects`
 --
 ALTER TABLE `subjects`
-  MODIFY `subject_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `subject_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `users`
 --
