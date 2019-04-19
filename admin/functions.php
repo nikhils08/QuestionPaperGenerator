@@ -164,8 +164,9 @@ function generatePaper($questions, $each_question_mark, $total_required_marks, $
             } else {
                 $countsamenumber = 0;
                 $samenumber = false;
-                continue;
             }
+			if($countsamenumber == $length)
+				break;
         }
 
         if($countsamenumber == $length)
